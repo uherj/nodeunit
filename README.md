@@ -94,6 +94,34 @@ Nodeunit uses the functions available in the node.js
 * __ifError(value)__ - Tests if value is not a false value, throws if it is a
   true value. Useful when testing the first argument, error in callbacks.
 
+Nodeunit also uses functions available in the
+[node-assert-extras module](https://gitorious.org/node-assert-extras):
+
+* __isNull(value, [message])__ -
+* __isNotNull(value, [message])__ -
+* __isTypeOf(value, type, [message])__ -
+* __isNotTypeOf(value, type, [message])__ -
+* __isObject(value, [message])__ -
+* __isFunction(value, [message])__ -
+* __isString(value, [message])__ -
+* __isBoolean(value, [message])__ -
+* __isNumber(value, [message])__ -
+* __isUndefined(value, [message])__ -
+* __isNotUndefined(value, [message])__ -
+* __isArray(value, [message])__ -
+* __isNaN(value, [message])__ -
+* __isNotNaN(value, [message])__ -
+* __match(value, pattern, [message])__ -
+* __noMatch(value, pattern, [message])__ -
+* __isPrototypeOf(proto, object, [message])__ -
+* __isNotPrototypeOf(proto, object, [message])__ -
+* __isWritable(object, property, [message])__ -
+* __isNotWritable(object, property, [message])__ -
+* __isConfigurable(object, property, [message])__ -
+* __isNotConfigurable(object, property, [message])__ -
+* __isEnumerable(object, property, [message])__ -
+* __isNotEnumerable(object, property, [message])__ -
+
 Nodeunit also provides the following functions within tests:
 
 * __expect(amount)__ - Specify how many assertions are expected to run within a
